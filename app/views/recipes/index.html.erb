@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Toutes les recettes</h1>
+  <% @recipes.each do |recipe| %>
+    <%= image_tag(recipe.photo, size: '400x400') %>
+    <h2><%= recipe.title %></h2>
+    <p><%= recipe.time_cook %> min</p>
+    <p><%= recipe.description %></p>
+  <% end %>
+</div>
